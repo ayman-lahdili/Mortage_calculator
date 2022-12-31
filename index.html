@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 mx-auto p-5" style="max-width: 1200px">
+        <div id="langs" class="langs" style="display: none">
+            <a href="#" language="french" class="active">FRA</a>
+            <a href="#" language="english">ENG</a>
+        </div>
+
+        <div id="monthlyPaymentForm" class="content" style="display: none">
+
+            <div class="d-flex flex-column justify-content-center align-items-center w-100 p-5">
+
+                <h1 class="title" style="font-weight:bold" >Calcul Hypothecaire</h1>
+                
+
+                <h5 class="description" style="max-width: 600px;">Cette application permet de calculer le paiement mensuel pour rembourser une dette hypothécaire selon un certain nombre de mois et un taux d'intérêt.</h5>
+            
+                <div class="d-flex flex-column justify-content-center align-items-start w-100 mb-5" style="max-width: 700px;">
+        
+        
+                    <label for="D" class="debt" style="font-weight:bold">Dette</label>
+                    <input id="D" type="number" oninput="validateForm()" class="form-control mb-4 w-100" placeholder="Entrez le montant de la dette">
+        
+        
+                    <label for="N" class="month" style="font-weight:bold">Nombre de mois</label>
+                    <input id="N" type="number" oninput="validateForm()" class="form-control mb-4 w-100"  placeholder="Entrez le nombre de mois">
+        
+        
+                    <label for="I" class="rate" style="font-weight:bold">Taux d'intérêt</label>
+                    <input id="I" type="number" oninput="validateForm()" class="form-control mb-4 w-100"  placeholder="Si aucune valeur n'est entré, la valeur par défaut est celle de la banque centrale + 1%" >
+        
+                    <button id="formSubmitBtn" onclick="submitForm()" type="button" class="btn btn-primary btn-lg w-100">
+                    
+                        <div id="btn_spinner" class="spinner-border text-light mx-auto" role="status" style="display: none">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+
+                        <h3 id="btn_text" class="submit" style="font-weight:bold">Soumettre</h3>
+
+                    </button>
+        
+        
+                </div>
+        
+        
+                <div class="row mx-0 w-100" style="max-width: 700px;">
+        
+                    <div class="col-6 d-flex flex-column justfiy-content-center align-items-start p-0">
+        
+                        <h3 class="bank_rate" style="font-weight:bold">Taux directeur</h3>
+                        <h6 class="bank_rate_desc">Banque centrale du Canada</h6>
+        
+                        <h1 id="BOCIR_PCT" class="Montserrat">0%</h1>
+        
+                        
+                    </div>
+        
+        
+                    <div class="col-6 d-flex flex-column justfiy-content-center align-items-end p-0">
+        
+                        <h3 class="payement" style="font-weight:bold">Paiement Mensuel</h3>
+                        <h6 class="payement_desc">Calculé selon vos paramètres</h6>
+        
+                        <h1 id="monthly_payment" class="Montserrat">0$</h1>
+        
+                        
+                    </div>
+        
+        
+        
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div id="loadingScreen">
+
+            <div class="d-flex flex-column justify-content-center align-items-center p-5" >
+
+                <h4 class="Montserrat text-center mb-5" style="max-width: 700px;">Veuillez patienter pendant que nous récupérons le taux d'intérêt de la banque centrale du Canada</h4>
+
+                <div class="loader"></div>
+
+            </div>
+
+
+        </div>
+    
+    
+    
+    </div>
+
+
+    
+
+    <script type='text/javascript' src='config.js'></script>
+    <script type='text/javascript' src='app.js'></script>
+</body>
+</html>
