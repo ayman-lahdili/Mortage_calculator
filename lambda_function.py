@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     
     functionResponse = {}
     
-    if(I is ""):
+    if I == "":
         
         api_url = 'https://api.api-ninjas.com/v1/interestrate?country=canada&central_bank_only=true'
         response = requests.get(api_url, headers={'X-Api-Key': 'tqSz1zW8yPlJS7FhBrW2ew==mliuAqv9IcKfJcW0'})
