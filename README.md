@@ -9,7 +9,7 @@ using a service-oriented architecture (SOA).
 The web application has to calculate the monthly payment $M$ to pay off a mortgage debt $D$ during a certain number $N$ of months by applying a certain interest rate $I$.
 
 **formula to calculate the monthly mortgage payement**
-$$\left(M = D [ I/12(1 + I/12)^N ] / [ (1 + I/12)^N − 1])$$
+$$\left(M = D [ I/12(1 + I/12)^N ] / [ (1 + I/12)^N − 1]\right)$$
 
 ## How does it work?
 
