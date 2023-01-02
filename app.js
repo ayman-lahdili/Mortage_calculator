@@ -82,7 +82,7 @@ link.forEach(el=>{
 
 let data = {
     french: {
-        title: "Calcule Hypothecaire",
+        title: "Calcul Hypothécaire",
         description: "Cette application permet de calculer le paiement mensuel pour rembourser une dette hypothécaire selon un certain nombre de mois et un taux d'intérêt.",
         debt: "Dette",
         month: "Nombre de mois",
