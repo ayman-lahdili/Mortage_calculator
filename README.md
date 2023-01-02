@@ -26,4 +26,4 @@ $$\left(M = D [ I/12(1 + I/12)^N ] / [ (1 + I/12)^N − 1]\right)$$
 * **CSS** for styling the website
 
 ## See it for yourself
-[website](https://deploy.dffg9pztcsg0.amplifyapp.com/#)
+[**Mortgage calculator**](https://deploy.dffg9pztcsg0.amplifyapp.com/#)
