@@ -1,7 +1,7 @@
 
 # Mortage Calculator
 
-This project consists of the development of a simple web application 
+The project consists of the development of a simple web application 
 using a service-oriented architecture (SOA).
 
 ## Description
@@ -16,7 +16,7 @@ $$\ M = D [ I/12(1 + I/12)^N ] / [ (1 + I/12)^N − 1] $$
 * An **AWS Lambda function** is used to calculate mortgage calculation service
 * This Lambda function is invoqued using a **AWS REST API Gateway** to route calls
 * APINinjas's **API** is used to To obtain the current Bank rate of Canada
-* The whole is hosted on **AWS Amplify**
+* The whole is host on **AWS Amplify**
 
 ## Built with...
 
