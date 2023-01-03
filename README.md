@@ -20,7 +20,7 @@ $$\ M = D [ I/12(1 + I/12)^N ] / [ (1 + I/12)^N − 1] $$
 
 ## Built with...
 
-* **Python** for the aws Lambda function
+* **Python** for the AWS Lambda function
 * **Javascript** for the logic of the website
 * **HTML** for the structure of the form
 * **CSS** for styling the website
