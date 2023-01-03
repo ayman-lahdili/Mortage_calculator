@@ -13,7 +13,7 @@ var BOCIR
 var monthlyPayment = 0
 
 //API Ninjas Key
-var mykey = MY_KEY
+var mykey = process.env.MY_KEY
 
 
 //DOM Elements
