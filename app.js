@@ -89,7 +89,7 @@ let data = {
         rate: "Taux d'intérêt",
         submit: "Soumettre",
         bank_rate: "Taux directeur",
-        bank_rate_desc: "Banque centrale du Canada",
+        bank_rate_desc: "Banque du Canada",
         payement: "Paiement Mensuel",
         payement_desc: "Calculé selon vos paramètres",
 
@@ -102,7 +102,7 @@ let data = {
         rate: "Interest rate",
         submit: "Submit",
         bank_rate: "Bank rate",
-        bank_rate_desc: "Central Bank of Canada",
+        bank_rate_desc: "Bank of Canada",
         payement: "Montly payement",
         payement_desc: "Calculated according to your parameters",
 
