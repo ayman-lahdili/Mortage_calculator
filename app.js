@@ -103,7 +103,7 @@ let data = {
         submit: "Submit",
         bank_rate: "Bank rate",
         bank_rate_desc: "Bank of Canada",
-        payement: "Montly payement",
+        payement: "Monthly payment",
         payement_desc: "Calculated according to your parameters",
 
     },
